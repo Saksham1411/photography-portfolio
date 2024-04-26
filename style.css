@@ -5,6 +5,7 @@
     box-sizing: border-box;
     --font-style-1: "Lora", serif;
     --font-nav-items: "Montserrat", sans-serif;
+    --font-style-2: "EB Garamond", serif;
 }
 
 ul {
@@ -122,6 +123,10 @@ img {
     font-family: var(--font-nav-items);
     font-weight: 500;
 }
+.left .head{
+    font-size: 18px;
+    font-weight: 600;
+}
 .right{
     width: 40%;
     height: auto;
@@ -130,6 +135,47 @@ img {
     width: 100%;
     height: auto;
     object-fit: contain;
+}
+.poster{
+    width: 100vw;
+    position: relative;
+    margin-bottom: 6rem;
+}
+.poster .poster-img{
+    width: 100%;
+}
+.poster img{
+    width: 100%;
+    object-fit: cover;
+}
+.center-text{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--font-style-1);
+    color: #fff;
+    margin-left: 0;
+    padding: 2rem;
+    text-shadow: 1px 2px 30px#000000;
+}
+.text-section{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.text-section .head{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: var(--font-style-2);
+}
+.text-section .text{
+    font-size: 17px;
+    font-family: var(--font-nav-items);
+
 }
 
 
@@ -161,6 +207,18 @@ img {
     }
     .right{
         width: 80%;
+    }
+    .center-text{
+        font-size: 2.5rem;
+    }
+    .text-section{
+        width: 80%;
+    }
+    .text-section .head{
+        font-size: 1.75rem;
+    }
+    .text-section .text{
+        font-size: 15px;
     }
 
 }
