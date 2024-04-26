@@ -1,28 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     box-sizing: border-box;
-    --font-style-1 : "Lora", serif;
-    --font-nav-items : "Montserrat", sans-serif;
+    --font-style-1: "Lora", serif;
+    --font-nav-items: "Montserrat", sans-serif;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-img{
+img {
     height: 100vh;
     object-fit: cover;
 }
 
-.hero-section{
+.hero-section {
     position: relative;
     top: 0;
     height: 100vh;
     width: 100vw;
 }
 
-.navv{
+.navv {
     width: 100%;
     padding: 1rem 2rem;
     position: fixed;
@@ -34,17 +35,20 @@ img{
     align-items: center;
 
 }
-.navv p{
+
+.navv p {
     font-family: var(--font-style-1);
     text-transform: uppercase;
     font-size: 1.6rem;
     font-weight: 500;
     margin: 0;
 }
-.menu{
+
+.menu {
     display: none;
 }
-.nav-items{
+
+.nav-items {
     display: flex;
     gap: 1rem;
     font-weight: 500;
@@ -53,39 +57,70 @@ img{
     margin-right: 1rem;
 }
 
-.slider{
+.slider {
     position: relative;
 }
 
-.overlay-text{
+.overlay-text {
     position: absolute;
     top: 10rem;
     width: 30%;
     margin-left: 10vw;
     z-index: 1;
 }
-.overlay-text p{
+
+.overlay-text p {
     font-size: 3rem;
     font-weight: 500;
     font-family: var(--font-style-1);
     color: #1f1522;
 }
 
+.gallary {
+    padding: 5rem 0;
+    width: 100vw;
+    /* height: 88%.; */
+    overflow: hidden;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
 
+.gallary .column{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 28%;
+}
+.grid{
+    /* height: fit-content;
+    width: fit-content; */
+    overflow: hidden;
 
+}
+.gallary img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0.25rem;
+    /* width: fit-content; */
+}
 
 
 @media (max-width:425px) {
-    .navv p{
+    .navv p {
         font-size: 1rem;
     }
-    .overlay-text p{
+
+    .overlay-text p {
         font-size: 1.5em;
     }
-    .nav-items{
+
+    .nav-items {
         display: none;
     }
-    .menu{
+
+    .menu {
         display: block;
         border: none;
         background: transparent;
@@ -93,4 +128,3 @@ img{
     }
 
 }
-
