@@ -6,6 +6,7 @@
     --font-style-1: "Lora", serif;
     --font-nav-items: "Montserrat", sans-serif;
     --font-style-2: "EB Garamond", serif;
+    --font-style-quote : "Dancing Script", cursive;
 }
 
 ul {
@@ -178,6 +179,63 @@ img {
 
 }
 
+.quote{
+    font-family: var(--font-style-quote);
+    font-size: 2rem;
+}
+.auth{
+    font-family: var(--font-nav-items);
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+    overflow: visible;
+    gap:6rem;
+}
+
+
+.profile .left{
+    width: 30%;
+    overflow: visible;
+    box-shadow: -7px -7px 20px 2px #ababab;
+}
+.profile .right{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem 0;
+}
+.profile .right .head{
+    font-size: 3rem;
+    font-family: var(--font-style-2);
+}
+.profile .right .text{
+    font-family: var(--font-nav-items);
+}
+
+
+.footer{
+    background: #1f1f1f;
+    color: white;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+}
+.footer .logo{
+    font-family: var(--font-style-1);
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.footer .social i{
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+
 
 @media (max-width:425px) {
     .navv p {
@@ -220,5 +278,30 @@ img {
     .text-section .text{
         font-size: 15px;
     }
+    .profile{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .profile .left{
+        width: 80%;
+    }
+    .profile .right{
+        gap: 0.5rem;
+    }
+    .profile .right .head{
+        font-size: 2rem;
+    }
+    .footer{
+        padding: 0 2rem;
+    }
+    .footer .logo{
+        font-size: 14px;
+    }
+    .footer .social i{
+        margin-left: 0.5rem;
+        font-size: 16px;
+    }
+    
 
 }
